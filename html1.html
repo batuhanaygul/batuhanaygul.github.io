@@ -1,0 +1,478 @@
+<html>
+<!DOCTYPE html>
+<html>
+<head><title>Html</title>
+  <link rel="icon" type="image/png" href="webimg/jsicon.png">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+body { 
+	
+  font-family: "Lato", sans-serif;
+}
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 
+  left: 10;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 600px;
+}
+
+.sidebar a {
+  padding: 8px 8px 1px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f0da50;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 0px;
+  font-size: 36px;
+  margin-left: 10px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  color:#f0da50;
+  background-color: black;
+}
+
+.dropdown-menu {
+  color:black;
+  background-color: #f0da50;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+/* On smaller screens, where height is less than 150px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height:1000px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+</style>
+</head>
+<body> <style="box-sizing: border-box;" 
+
+
+                                                              <!-- MENU -->
+<div id="mySidebar" class="sidebar">
+
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">x</a>
+  <hr>
+  <hr>
+  <hr>
+        <a class="dropdown-item" href="html1.html">Html</a>
+		<a class="dropdown-item" href="bootstrap2.html">Bootstrap</a>
+		<a class="dropdown-item" href="index.html">Java Script</a>
+</div>
+
+<div id="main">
+  <button class="openbtn" onclick="openNav()">☰ Menü </button> 
+   
+   <div style="width:100%;text-align:center;display:inline-block;position:absolute"></div> 
+
+<script>
+function openNav() {
+  document.getElementById("mySidebar").style.width = "220px";
+  document.getElementById("main").style.marginLeft = "210px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";style="color:blue"
+}
+</script>
+
+<body>
+    <h3 id="Başlangıç" style="color:blue"> Link ekleme:</h3>
+    <p style="background-color:white;text-align:left;font-family:courier;display:inline-block"> < a href=" link "> linkte gözükecek ad < /a> </p>  
+    <p style="color:tomato">Örnek:</p>
+    <a href="https://www.tutorialspoint.com/codingground.htm">Codinggroud</a> 
+    <hr>   
+    
+    <h3 style="color:blue" >Resim ekleme:</h3>
+    <p style="background-color:white;text-align:left;font-family:courier;display:inline-block"> < img src= "Resim Linki"</p>
+    <p style="color:tomato">Örnek:</p>
+    <img src= "https://www.tutorialspoint.com/cg/images/logo.png">
+    <hr>
+    
+    <h3 style="color:blue"> Genişlik ve Yükseklik:</h3>
+    <p>Resim linkinden sonra gelir //</p> <p style="background-color:white;text-align:left;font-family:courier;display:inline-block">  width="500" height="600"</p>
+    <hr>
+    
+    <h3 style="color:blue; display:inline-block"> Alt Attribute:</h3>
+    <p>Görseli adlandırır,tarayıcıda, görsellerde bulunması ve gözükmeyen resmi açıklamak içindir. Resim linkinden sonra gelir //</p>  <p style="background-color:white;text-align:left;font-family:courier;display:inline-block"> alt="Resim açıklaması"</p>
+    <hr>
+    
+    <h3 style="color:blue"> Sayfa Arkaplan Rengi:</h3>
+    <p style="background-color:white;text-align:left;font-family:courier;display:inline-block"> < body style="background-color:Renk;"></p>
+    <hr>
+    
+    <h3 style="color:blue"> Yazı Rengi:</h3>
+    <p style="background-color:white;text-align:left;font-family:courier;display:inline-block"> < h3 style="Renk;"> </p>
+    <hr>
+    
+    <h3 style="color:blue"> Yazı Arkaplan Rengi:</h3>
+    <p style="background-color:white;text-align:left;font-family:courier;display:inline-block"> < p style="background-color:Renk;"> </p>
+    <hr>
+    
+    <h3 style="color:blue"> Yazı Boyutu:</h3>
+    <p style="background-color:white;text-align:left;font-family:courier;display:inline-block"> < h1 style="font-size:300%;"> < /h1> </p>
+    <hr>
+    
+    <h3 style="color:blue"> Yazı Fontu:</h3>
+    <p style="background-color:white;text-align:left;font-family:courier;display:inline-block"> < h1 style="font-family:courirer;"> < /h1> </p>
+    <hr>
+    
+    
+    <h3 style="color:blue"> < pre>< /pre>:</h3>
+    <p>Metnin yazıldığı gibi görünmesini sağlar (boşluklar, satır sonları vb.) //</p>
+    <p style="background-color:white;text-align:left;font-family:courier;display:inline-block">  < pre>  Metin...  < /pre></p>
+    <hr>
+    
+    
+    <b> <h3 style="color:blue"> Liste Etiketleri:</h3> </b>
+    <h4 style="background-color:white;text-align:left;font-family:courier;display:inline-block ></h4> 
+    <h3>
+    <ul style="background-color:white">
+    <pre>
+     <li>  < b>       Kalın yazı </li>
+     <li>  < strong>  Önemli metin </li>
+     <li>  < i>       İtalik metin </li>
+     <li>  < em>      Vurgulanan metin </li>
+     <li>  < mark>    İşaretli metin </li>
+     <li>  < small>   Daha küçük metin </li>  
+     <li>  < del>     Silinen metin </li> 
+     <li>  < ins>     Eklenen metin </li> 
+     <li>  < sub>     Alt simge metni </li> 
+     <li>  < sup>     Üst simge metni </li> </pre>
+     </h3> 
+     </u>
+    <hr>
+    
+    
+    
+    <h3 style="color:blue"> Yorum Satırı Ekleme: </h3>
+    <p style="background-color:white;text-align:left;font-family:courier;display:inline-block">  < !-- Yorum --> </p>
+    <hr>
+    
+    
+    <h3 style="color:blue"> Kenarlık Ekleme: </h3>
+    <p style="color:tomato">Örnek:</p>
+    <p style="background-color:white;text-align:left;font-family:courier;border: 1px solid red;display:inline-block">  border: 1px solid red; </p>
+    <hr>
+    
+    
+    <h3 style="color:blue"> Dolgu Ekleme: </h3>
+    <p style="color:tomato">Örnek:</p>
+    <p style="background-color:white;text-align:left;font-family:courier; padding:30px;display:inline-block">   padding: 30px; </p>
+    <hr>
+    
+    <style>
+    
+    table {
+      font-family: arial, sans-serif;
+      border-collapse: collapse;
+      background-color: white;
+      width: 100%;
+    }
+    
+    td, th {
+      border: 1px solid tomato;
+      text-align: left;
+      padding: 8px;
+    }
+    
+    tr:nth-child {
+      background-color:white;
+    }
+    </style>
+    
+    
+    
+    <h2 id="Lutvelizade" style="color:blue">Lutvelizade</h2>
+    
+    <table>
+      <tr>
+        <th>Bölüm</th>
+        <th>Çalışan Sayısı</th>
+      </tr>
+      
+      <tr>
+        <td>Bilişim Teknolojileri</td>
+        <td>3</td>
+      </tr>
+      
+      <tr>
+        <td>Muhasebe</td>
+        <td>1</td>
+      </tr>
+      
+      <tr>
+        <td>Müşteri Hizmetleri</td>
+        <td>2</td>
+      </tr>
+      <tr>
+      
+        <td>Tasarım</td>
+        <td>4</td>
+      </tr>
+      
+      
+      
+      <tr>
+        <td>İnsan Kaynakları</td>
+        <td>1</td>
+      </tr>
+      
+      <tr>
+        <td>Depo</td>
+        <td>4</td>
+      </tr>
+    </table>
+    <hr>
+    
+        
+    <b> <h3 style="color:blue"> Liste Etiketleri:</h3> </b>
+    <h4 style="background-color:white;text-align:left;font-family:courier;display:inline-block" ></h4> 
+    <h3>
+    <ul style="background-color:white">
+     <li>  < ul>	Sırasız liste </li>
+     <li>  < ol>	Sıralı liste </li>
+     <li>  < li>	Liste öğesi </li>
+     <li>  < dl>	Açıklama listesi tanımlar </li>
+     <li>  < dt>	Etiket adı tanımlar </li>
+     <li>  < dd> 	Etiket açıklaması </li>  </h3> 
+     </u>
+    <hr>
+    
+    
+    <p style="color:tomato">Örnek:</p>
+    
+    <h3 style="color:blue">Liste Öğeleri:</h3>
+    <b>
+    
+    
+    <ul style="list-style-type:disc;background-color:white">
+      <li>Nokta öğe işareti // style="list-style-type:disc;"</li> </ul> 
+    <ul style="list-style-type:circle;background-color:white">
+      <li>Halka öğe işareti // style="list-style-type:circle;"></li> </ul> 
+    <ul style="list-style-type:square;background-color:white">
+      <li>Kare öğe işareti // style="list-style-type:square;"></li> </ul> 
+    <ul style="list-style-type:none;background-color:white">
+      <li>Öğe işareti yok // style="list-style-type:none;"></li>
+    </ul>
+    </style>
+    </b>
+    <hr>
+    
+    
+    <b> <h3 style="color:blue"> Liste Etiketleri:</h3> </b>
+    <h4 style="background-color:white;text-align:left;font-family:courier;display:inline-block" ></h4> 
+    <h3>
+    <ul style="background-color:white">
+     <li> type="1" // Sayılar</li>
+     <li> type="A" // Büyük Harfler</li>
+     <li> type="a" // Küçük Harfler</li>
+     <li> type="I" // Büyük Roma Harfleri</li>
+     <li> type="i" // Küçük Roma Harfleri</li> </h3> 
+     </u>
+    <hr>
+    
+    
+    
+    
+    <div style="background-color:black;color:white;padding:20px;">
+      <h2>Div ile blok tasarlama</h2>
+      <p> < div style="background-color:black;color:white;padding:20px;"> /p>
+    </div> 
+    <hr>
+    
+    
+    <h1>Satır içi metin <span style="color:tomato;font-weight:bold">işaretleme</span> öğesi </h1>
+    
+    <p style="color:blue"> <  style="color:tomato;font-weight:bold">işaretlenecek metin / kelime</span></p>
+    <hr>
+    
+    <style>
+    .city {
+      background-color: tomato;
+      color: white;
+      border: 2px solid black;
+      margin: 5px;
+      padding: 5px;
+    }
+    .main {
+      text-align: center;
+      }     <!-- aşağıdaki kodda merkeze yazdırmak için önce burada tanımlıyoruz -->
+           
+    </style>
+    </head>
+    <body>
+    
+    <div class="city">
+    <h2>Class Öğesi</h2>
+    <p> < style>
+    .city {
+      background-color: tomato;
+      color: white;
+      border: 2px solid black;
+      margin: 20px;
+      padding: 20px;
+    } <br>
+    < div style="display:inline-block"class="city">
+    < h2>London</ h2>
+    < p>London is the capital of England.</ p>
+    </ div> 
+    </style>
+    </p>
+    </div>
+    
+    <p style="color:tomato">Örnek:</p>
+    
+    <div class="city main">
+    <h2>London</h2>
+    <p>London is the capital of England.</p>
+    </div> 
+    
+    <div  class="city">
+    <h2>Paris</h2>
+    <p>Paris is the capital of France.</p>
+    </div>
+    
+    <div class="city">
+    <h2>Tokyo</h2>
+    <p>Tokyo is the capital of Japan.</p>
+    </div>
+    <hr>
+    
+    
+    <h2>Use of The class Attribute in JavaScript</h2>
+    <p>Click the button to hide all elements with class name "city":</p>
+    
+    <button onclick="myFunction()">Hide elements</button>
+    
+    <h2 class="city">London</h2>
+    <p>London is the capital of England.</p>
+    
+    <h2 class="city">Paris</h2>
+    <p>Paris is the capital of France.</p>
+    
+    <h2 class="city">Tokyo</h2>
+    <p>Tokyo is the capital of Japan.</p>
+    
+    <script>
+    function myFunction() {
+      var x = document.getElementsByClassName("city");
+      for (var i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+    }
+    </script>
+    <hr>
+    
+    
+    <style>
+    #myHeader {
+      background-color: lightblue;
+      color: black;
+      padding: 40px;
+      text-align: center;
+    } 
+    </style>
+    
+    
+    <h2>The id Attribute</h2>
+    <p>Use CSS to style an element with the id "myHeader":</p>
+    
+    <h1 id="myHeader">My Header</h1>
+    
+    <!DOCTYPE html>
+    <html>
+    <head>
+    <style>
+    /* Style the element with the id "myHeader" */
+    #myHeader {
+      background-color: lightblue;
+      color: black;
+      padding: 40px;
+      text-align: center;
+    }
+    
+    /* Style all elements with the class name "city" */
+    .city {
+      background-color: tomato;
+      color: white;
+      padding: 10px;
+    } 
+    </style>
+    </head>
+    <body>
+    
+    <h2>Difference Between Class and ID</h2>
+    <p>A class name can be used by multiple HTML elements, while an id name must only be used by one HTML element within the page:</p>
+    
+    <!-- An element with a unique id -->
+    <h1 id="myHeader">My Cities</h1>
+    
+    <!-- Multiple elements with same class -->
+    <h2 class="city">London</h2>
+    <p>London is the capital of England.</p>
+    
+    <h2 class="city">Paris</h2>
+    <p>Paris is the capital of France.</p>
+    
+    <h2 class="city">Tokyo</h2>
+    <p>Tokyo is the capital of Japan.</p>
+    <hr>
+    
+    
+    
+    <h2 style="color:blue">Sayfada Atlama Öğesi</h2>
+    
+    <p style="background-color:white;text-align:left;font-family:courier;display:inline-block"> 
+    < h2 id="Lutvelizade" style="color:white">Lutvelizade</ h2> <br> <br>
+    < p>< a href="#Lutvelizade">Lutvelizade tablosuna git < /a> < /p> </p>
+    
+    <p style="color:tomato;text-align:center;">Örnek:</p>
+    
+    <p style="text-align:center"><a href="#Başlangıç">Sayfanın başına dön</a></p>
+    <p style="text-align:center"><a href="#Lutvelizade">Lutvelizade tablosuna git</a></p>
+    <hr>
+    
+
+</div>
