@@ -1,0 +1,356 @@
+<html>
+<!DOCTYPE html>
+<html>
+<head><title>Java Script</title>
+  <link rel="icon" type="image/png" href="webimg/jsicon.png">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+body {
+	
+  font-family: "Lato", sans-serif;
+}
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: ;
+  left: 10;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 600px;
+}
+
+.sidebar a {
+  padding: 8px 8px 1px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f0da50;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 0px;
+  font-size: 36px;
+  margin-left: 10px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  color:#f0da50;
+  background-color: black;
+}
+
+.dropdown-menu {
+  color:black;
+  background-color: #f0da50;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+/* On smaller screens, where height is less than 150px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height:1000px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+</style>
+</head>
+<body> <style="box-sizing: border-box;" 
+
+
+                                                              <!-- MENU -->
+<div id="mySidebar" class="sidebar">
+
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">x</a>
+  <hr>
+  <hr>
+  <hr>
+        <a class="dropdown-item" href="html1.html">Html</a>
+		<a class="dropdown-item" href="bootstrap2.html">Bootstrap</a>
+		<a class="dropdown-item" href="index.html">Java Script</a>
+</div>
+
+<div id="main">
+  <button class="openbtn" onclick="openNav()">☰ Menü </button> 
+   
+   <div style="width:100%;text-align:center;display:inline-block;position:absolute">
+
+   <img  src="webimg/jsicon.png"  style="width:6.979%; display:block "> 
+   </a>
+     </div> 
+
+<script>
+function openNav() {
+  document.getElementById("mySidebar").style.width = "220px";
+  document.getElementById("main").style.marginLeft = "210px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+
+<body>
+
+<div class="jumbotron text-center" style="background-color:#f0da50;color:black">
+  <h1 style="font-size:50px">Java Script</h1>
+</div>
+  
+  
+                                                                <!-- 1.KONTEYNER -->
+  
+  
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+	<br>
+     <h2>Saat ve Tarih</h2>
+	 <br>
+<button style="background-color:#f0da50;color:black" type="button"
+onclick="document.getElementById('date').innerHTML = Date()">Saat ve tarihi Göster</button>
+<p id="date"></p>
+
+<details class="akerdion">
+  <summary class="ozet" >Nasıl Yapılır ?</summary>
+  <p><div style="background-color:black;color:white;padding:20px;">
+  < button style="background-color:#f0da50;color:black" type="button"
+onclick="document.getElementById('date')<br><div class=""></div>innerHTML = Date()">Saat ve tarihi Göster</ button>
+< p id="date"> < / p > 
+</div> </p>
+</details>
+<br>
+<hr>
+<br>
+<h2>Alert</h2>
+<br>
+<p>Alert sayfada kullanıcıya uyarı veya mesaj vermek için kullanılır...
+<br>
+<br>
+<button style="background-color:#f0da50" onclick="window.alert('3,14');">Pi Sayısı Kaçtır ?</button> <br>
+<details class="akerdion">
+  <summary class="ozet" >Nasıl Yapılır ?</summary>
+  <p><div style="background-color:black;color:white;padding:20px;">
+		< button style="background-color:#f0da50" onclick="window.alert('3,14');">Pi Sayısı Kaçtır ?< / button >
+</div> </p>
+</details>
+<br>
+
+<hr>
+<br>
+<h2>var değişkeni</h2>
+<br>
+<p>Bir değişken tanımlamak için kullanılır, <br>
+var ile tanımlanan değişken tekrar tanımlanabilir ve tanımlanan değer sonradan değiştirilebilir.
+<br>
+<br>
+<details class="akerdion">
+  <summary class="ozet" >Nasıl Yapılır ?</summary>
+  <p><div style="background-color:black;color:white;padding:20px;">
+		< script>
+var x, y; <br>
+x = 5;	 <br>
+y = 6;	<br>
+document.getElementById("demo").innerHTML = x + y; 
+< /script> 
+</div>  </p>
+</details>
+
+<hr>
+<br>
+<h2>let keywords</h2>
+<br>
+<p>
+let ile tanımlanan tekrar tanımlanamaz fakat tanımlanan değer sonradan değiştirilebilir.
+<br>
+<br>
+
+<hr>
+<br>
+<h2>const keywords</h2>
+<br>
+<p>Sabit bir değer tanımlamak için kullanılır, <br>
+const ile tanımlanan değişken tekrar tanımlanamaz ve değiştirilemez.
+<br>
+<br>
+
+
+
+
+
+
+<br>
+<hr>
+<br>
+	</div>
+	
+	
+	                                                              <!-- 2.KONTEYNER -->
+	
+	
+    <div class="col-sm-4">
+      
+	  
+	  
+<br>
+<h2>Ampul Tasarımı</h2>
+<br>
+<button style="background-color:#f0da50;color:black" onclick="document.getElementById('myImage').src='webimg/açıkampul.png'">Işığı Aç</button>
+<button style="background-color:black;color:white" onclick="document.getElementById('myImage').src='webimg/kapalıampul.png'">Işığı Kapat</button>
+<img id="myImage" src="webimg/kapalıampul.png" style="width:150px">
+
+
+    
+<details class="akerdion">
+  <summary class="ozet" >Nasıl Yapılır ?</summary>
+  <p><div style="background-color:black;color:white;padding:20px;">
+   < button style="background-color:#f0da50;color:black" onclick="document.getElementById<br>('myImage').src='açıkampul.png'">Işığı Aç</ button>
+< button style="background-color:black;color:white" onclick="document.getElementById<br>('myImage').src='kapalıampul.png'">Işığı Kapat</ button>
+< img id="myImage" src="kapalıampul.png" style="width:150px">
+</div> </p>
+</details>
+<br>
+<hr>
+<br>
+	  <br>
+      <h2>Console.log() <br> Kullanımı</h2>
+	  <br>
+      <p>Hata ayıklama bölümündeki konsola yazmak için kullanılır...</p>
+	 
+	  <button style="background-color:#f0da50">11+12=</button>
+		<br>
+		<br>
+		<p>Cevabı görmek için "F12" tuşuna basıp "Console" bölümüne giriniz... </p>
+	  <script>console.log(11+12);</script>
+	  <br>
+	  <details class="akerdion">
+  <summary class="ozet" >Nasıl Yapılır ?</summary>
+  <p><div style="background-color:black;color:white;padding:20px;">
+		< script>console.log(11+12);< / script>
+		
+		
+		
+</div> </p> </details>
+			<hr>
+<br>
+<h2>Atama Operatörü</h2>
+<br>
+<p>( = ) "Atama" yapmak için kullanılır. <br>
+   ( == ) "Eşittir" anlamına gelir.
+<br>
+<br>
+
+	<hr>
+<br>
+<h2>Hoisting</h2>
+<br>
+<p>Değişkeni önce kullanıp sonra tanımlama işlemine denir, <br> let ve const için geçerli değildir.
+<br>
+<br>
+<details class="akerdion">
+  <summary class="ozet" >Nasıl Yapılır ?</summary>
+  <p><img src="webimg/hoisting.png">
+  </p>
+</details>
+    </div>
+	
+	
+	
+	
+                                                              <!-- 3.KONTEYNER --> 
+	
+    <div class="col-sm-4">   
+	  <br>
+      <h2>Document.write() Kullanımı</h2>
+	  <br>
+      <p>Bir JavaScript kodunu denemek için kullanılır, html kodlarını göstermez...</p>
+	  
+	  <button style="background-color:#f0da50" onclick="document.write(' document.write denemesi ')">Buraya tıkla</button> <br>
+	  <br>
+	  <details class="akerdion">
+  <summary class="ozet" >Nasıl Yapılır ?</summary>
+  <p><div style="background-color:black;color:white;padding:20px;">
+		< button onclick="document.write(' document.write denemesi ')">Buraya tıkla < / button >
+</div> </p>
+</details>
+<br>
+<hr>
+<br>
+
+
+	 
+
+	  <br>
+      <h2>Windows.print() <br> Kullanımı</h2>
+	  <br>
+      <p>Sayfayı yazdırmak için kullanılır...</p>
+	 
+	  <button style="background-color:#f0da50" onclick="window.print()">Bu sayfayı yazdır</button>
+	  <br>
+	  <br>
+	  <details class="akerdion">
+  <summary class="ozet" >Nasıl Yapılır ?</summary>
+  <p><div style="background-color:black;color:white;padding:20px;">
+		< button style="background-color:#f0da50" onclick="window.print()">Bu sayfayı yazdır< / button >
+</div> </p>
+</details>
+<br>
+<hr>
+<br>
+
+
+	 
+
+	  <br>
+      <h2>Yorum Ekleme</h2>
+	  <br>
+     <p>Yorum satırı ekleme:<br> ( // yorum // ) <br>
+	          Çok satırlı yorum ekleme: <br>( /* yorum
+								<br>   yorum */ )</p>
+
+	  <br>
+
+</div> </p>
+
+    </div>
+    </div>
+	
+  </div>
+</div>
+
+
+</body>
+</html>
+
+</body>
+</html> 
