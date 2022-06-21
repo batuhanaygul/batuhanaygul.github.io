@@ -1,0 +1,199 @@
+<html>
+<!DOCTYPE html>
+<html>
+<head><title>Bootstrap</title>
+  <link rel="icon" type="image/png" href="webimg/jsicon.png">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+body {
+	
+  font-family: "Lato", sans-serif;
+}
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: ;
+  left: 10;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 600px;
+}
+
+.sidebar a {
+  padding: 8px 8px 1px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f0da50;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 0px;
+  font-size: 36px;
+  margin-left: 10px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  color:#f0da50;
+  background-color: black;
+}
+
+.dropdown-menu {
+  color:black;
+  background-color: #f0da50;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+/* On smaller screens, where height is less than 150px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height:1000px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+</style>
+</head>
+<body> <style="box-sizing: border-box;" 
+
+
+                                                              <!-- MENU -->
+<div id="mySidebar" class="sidebar">
+
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">x</a>
+  <hr>
+  <hr>
+  <hr>
+        <a class="dropdown-item" href="html1.html">Html</a>
+		<a class="dropdown-item" href="bootstrap2.html">Bootstrap</a>
+		<a class="dropdown-item" href="index.html">Java Script</a>
+</div>
+
+<div id="main">
+  <button class="openbtn" onclick="openNav()">☰ Menü </button> 
+   
+   <div style="width:100%;text-align:center;display:inline-block;position:absolute"></div> 
+
+   <div style="width:100%;text-align:center;display:inline-block;position:absolute">
+    <a href="https://www.lutvelizade.com.tr/">
+    <img  src="webimg/imza.png"  style="width:20%"> 
+    </a>
+      </div> 
+
+<script>
+function openNav() {
+  document.getElementById("mySidebar").style.width = "220px";
+  document.getElementById("main").style.marginLeft = "210px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+
+    
+	                                                          <!-- SLIDER -->
+                                                            <div style="margin-top:0px;padding:15px 15px 0px;font-size:30px"> <class="slick-slide slick-current slick-active" data-slick-index="0" aria-hidden="false" style="width: 100%;"><div><div style="width: 100%; display: inline-block;">
+                                                              <a href="https://www.lutvelizade.com.tr/new-collection-etiketli-urunler" title="Yeni Sezon Bahar / Yaz 2021" tabindex="0">
+                                                                  <picture>
+                                                                      <source media="(max-width:576px)" srcset="https://cdn.lutvelizade.com.tr/gorseller/yeni-sezon-bahar-yaz-2021-9.jpg" type="image/svg+xml">
+                                                                      <img src="https://cdn.lutvelizade.com.tr/gorseller/yeni-sezon-bahar-yaz-2021-8.jpg" width="1575" class="card-img-top" alt="Yeni Sezon Bahar / Yaz 2021">
+                                                                  </picture>
+                                                              </a>
+                                                         <hr>
+                                                  
+                                                                                                                <!-- ÜRÜNLER -->
+                                                    
+                                                    <div <a  class="container-fluid;text-center;">
+                                                    <div class="row">
+                                                    
+                                                     <div style="background-color:#a6a6a6;color:white;background-image:url(webimg/mirabelle-sari-kadin-sandalet-m.jpg);background-position:40% 65%;background-size:100%" class="col-sm-2">
+                                                        <a href="https://www.lutvelizade.com.tr/kadin-sandalet-modelleri" style="display:block;height:100%;width:100%"> <h3 style="text-align:center">   </h3> </a>
+                                                      
+                                                      </div>
+                                                      <div  style="background-color:#a6a6a6;color:white;background-image:url(webimg/kyle-gercek-deri-duz-makosen-siyah-kadin-babet-1.jpg);background-position:50% 65%;background-size:100%" class="col-sm-2">
+                                                       <a href="https://www.lutvelizade.com.tr/kadin-babet-modelleri" style="display:block;height:100%;width:100%"> <h3 style="text-align:center">   </h3> </a>
+                                                  
+                                                      </div>
+                                                      <div  style="background-color:#808080;color:white;padding: 50px;background-image:url(webimg/mille-nude-kadin-babet-m.jpg);background-position:50% 65%;background-size:100%;" class="col-sm-2"></a>
+                                                        <a href="https://www.lutvelizade.com.tr/kadin-topuklu-modelleri" style="display:block;height:100%;width:100%"> <h3 style="text-align:center"></h3> </a>
+                                                      
+                                                      </div>
+                                                    <div style="background-color:#4d4d4d;color:white;background-image:url(webimg/joanna-yesil-kadin-terlik-1-m.jpg);background-position:50% 65%;background-size:100%" class="col-sm-2">
+                                                    <a href="https://www.lutvelizade.com.tr/kadin-terlik-modelleri" style="display:block;height:100%;width:100%"> <h3 style="text-align:center"></h3> </a>
+                                                  
+                                                       </div>
+                                                     <div style="background-color:#4d4d4d;color:white;background-image:url(webimg/jennifer-bej-kadin-spor-1.jpg);background-position:50% 65%;background-size:100%" class="col-sm-2">
+                                                        <a href="https://www.lutvelizade.com.tr/kadin-spor-modelleri" style="display:block;height:100%;width:100%"> <h3 style="text-align:center"></h3> </a>
+                                                      </div>
+                                                      <div style="background-color:#4d4d4d;color:white;background-image:url(webimg/minimal-kucuk-cerceve-leopar-kadin-gozluk-2.jpg);background-position:50% 65%;background-size:100%" class="col-sm-2">
+                                                        <a href="https://www.lutvelizade.com.tr/kadin-gozluk-modelleri" style="display:block;height:100%;width:100%"> <h3 style="text-align:center"></h3> </a>
+                                                      </div>
+                                                      
+                                                    
+                                                    
+                                                    
+                                                     <div style="background-color:#a6a6a6;color:white;background-image:url(webimg/tulum-00100-renkli-kadin-tulum-1-m.jpg);background-position:40% 65%;background-size:100%" class="col-sm-2">
+                                                     
+                                                        <a href="https://www.lutvelizade.com.tr/kadin-tulum-modelleri" style="display:block;height:100%;width:100%"> <h3 style="text-align:center">   </h3> </a>
+                                                      
+                                                      </div>
+                                                      <div  style="background-color:#a6a6a6;color:white;background-image:url(webimg/etek-00100-sari-kadin-etek-1-m.jpg);background-position:50% 65%;background-size:100%" class="col-sm-2">
+                                                       <a href="https://www.lutvelizade.com.tr/kadin-etek-modelleri" style="display:block;height:100%;width:100%"> <h3 style="text-align:center">   </h3> </a>
+                                                  
+                                                      </div>
+                                                      <div  style="background-color:#808080;color:white;padding: 50px;background-image:url(webimg/elbise-00106-renkli-kadin-elbise-4-m.jpg);background-position:50% 65%;background-size:100%;" class="col-sm-2"></a>
+                                                    <a href="https://www.lutvelizade.com.tr/kadin-elbise-modelleri" style="display:block;height:100%;width:100%"> <h3 style="text-align:center"></h3> </a>
+                                                      
+                                                      </div>
+                                                    <div style="background-color:#4d4d4d;color:white;background-image:url(webimg/keten-dokulu-kalin-cizgili-blazer-lacivert-kadin-ceket-m.jpg);background-position:50% 65%;background-size:100%" class="col-sm-2">
+                                                     <a href="https://www.lutvelizade.com.tr/kadin-ceket-modelleri" style="display:block;height:100%;width:100%"> <h3 style="text-align:center"></h3> </a>
+                                                       </div>
+                                                     <div style="background-color:#4d4d4d;color:white;background-image:url(webimg/pantolon.jpg);background-position:50% 30%;background-size:100%" class="col-sm-2">
+                                                        <a href="https://www.lutvelizade.com.tr/kadin-denim-pantolon-modelleri" style="display:block;height:100%;width:100%"> <h3 style="text-align:center"></h3> </a>
+                                                      </div>
+                                                     <div style="background-color:#4d4d4d;color:white;background-image:url(webimg/bisiklet-yaka-basic-pembe-kadin-basic-tisort-2-m.jpg);background-position:50% 65%;background-size:100%" class="col-sm-2">
+                                                        <a href="https://www.lutvelizade.com.tr/kadin-basic-tisort-modelleri" style="display:block;height:100%;width:100%"> <h3 style="text-align:center"></h3> </a>
+                                                      </div>
+                                                      
+                                                      
+                                                      </div>
+                                                      </div>
+                                                    </div>
+
+
+<body>
+
+</div>
